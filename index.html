@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Serendipiteca</title>
+</head>
+<body>
+<!-- MENU DESK & MOVIL-->
+    <nav class="MenuEscritorio">
+        <a href="#" class="link">Episodios</a>
+        <a href="#" class="link">Periodistas</a>
+        <a href="#" class="link">Noticias</a>
+        <a href="#" class="link">Amigos</a>
+        <a href="#" class="link">Apoyanos</a>
+    </nav>
+    <div class="degradado"></div>
+    <nav class="MenuMovil">
+        <a href="#" class="link">Episodios</a>
+        <a href="#" class="link">Periodistas</a>
+        <a href="#" class="link">Noticias</a>
+        <a href="#" class="link">Amigos</a>
+        <a href="#" class="link">Apoyanos</a>
+        <div class="salir">Salir</div>
+    </nav>
+    <div class="btnMenu"><i class="fas fa-bars"></i></div>
+
+<!--GALERIA- LIGHTBOX-->
+    <div class="lightbox" id="lightbox">
+        <span class="exit">Exit<i class="fas fa-times-circle"></i></span>
+        <div class="image">
+            <img src="" alt="" id="imagenLightbox">
+            <span id="nombre"></span>
+        </div>
+    </div>
+
+    <Section class= "galeria">
+        <h1>Todos los episodios</h1>
+        <p>
+        La parte 2 es un greed que contiene ilustraciones relacionadas al contenido oditivo
+        </p>
+        <div class="contenedor">
+             <div class="imagen"><img src="img/img1.jpg" alt="" class="img" mynameis="Imagen 1"></div>
+             <div class="imagen"><img src="img/img2.jpg" alt="" class="img" mynameis="Imagen 2"></div>
+             <div class="imagen"><img src="img/img3.jpg" alt="" class="img" mynameis="Imagen 3"></div>
+             <div class="imagen"><img src="img/img4.jpg" alt="" class="img" mynameis="Imagen 4"></div>
+             <div class="imagen"><img src="img/img5.jpg" alt="" class="img" mynameis="Imagen 5"></div>
+             <div class="imagen"><img src="img/img6.jpg" alt="" class="img" mynameis="Imagen 6"></div>
+             <div class="imagen"><img src="img/img7.jpg" alt="" class="img" mynameis="Imagen 7"></div>
+             <div class="imagen"><img src="img/img8.jpg" alt="" class="img" mynameis="Imagen 8"></div>
+             <div class="imagen"><img src="img/img9.jpg" alt="" class="img" mynameis="Imagen 9"></div>
+             <div class="imagen"><img src="img/img1.jpg" alt="" class="img" mynameis="Imagen 1"></div>
+             <div class="imagen"><img src="img/img2.jpg" alt="" class="img" mynameis="Imagen 2"></div>
+             <div class="imagen"><img src="img/img3.jpg" alt="" class="img" mynameis="Imagen 3"></div>
+        </div>
+     <!--TIP DE USO DE EMET: la opción 1 pondrá la imagen de fondo del div/
+     La opción 2 creará una etiqueta img, dentro del div
+     OPCION 1=> div[style="background :url('img/.jpg')"]*9
+     OPCION 2=> (div.imagen>img[src="img/img.jpg"])*9 -->
+
+    </Section>
+
+
+<footer>
+    <div class="redes">
+        <i class="fas fa-hashtag"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+    
+    <div class="formulario">
+        <form>
+            <div class="campo">
+                <h2>Suscribite</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribir aguí..." requiered>
+            </div>
+        </form>
+        <form>
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="nombre" placeholder="Escribir aguí..." requiered>
+            </div>
+        </form>
+        <form>
+            <div class="encuesta">
+                <div>
+                    <p>Selecciona tu contenido favorito </p>
+                <input type="radio" valuea="Politica" id="politica" name="contenido">
+                <label for="politica">Política</label>
+                <input type="radio" valuea="Reportajes" id="Reportajes" name="contenido">
+                <label for="politica">Reportajes</label>
+                </div>
+                <div>
+                    <input type="radio" valuea="Audio-Series" id="Audio-Series" name="contenido">
+                <label for="politica">Audio-Series</label>
+                <input type="radio" valuea="Testimonios" id="Testimonios" name="contenido">
+                <label for="politica">Testimonios</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="botonera">
+            <imput type="submit" volve="enviar">Enviar</imput>
+            <imput type="reset" volve="Limpiar">Limpiar</imput>
+        </div>
+    </div>
+
+    <div class="enlaces">
+        <h2>Enlaces Utiles</h2>
+        <ul>
+            <li><a href="">Noticias</a></li>
+            <li><a href="">Políticas</a></li>
+            <li><a href="">Reporteros</a></li>
+            <li><a href="">Más podcast</a></li>
+            <li><a href="">Donaciones</a></li>
+        </ul>
+    </div>
+</footer>
+   
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
